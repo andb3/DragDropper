@@ -4,7 +4,10 @@ import androidx.recyclerview.widget.ItemTouchHelper
 import androidx.recyclerview.widget.RecyclerView
 
 fun RecyclerView.dragDropWith(block: DragDropper.() -> Unit) {
-    val callback = DragDropper(adapter)
+    /*if(adapter==null){
+        throw Exception("DragDropper must be attached to a RecyclerView with an adapter!")
+    }*/
+    val callback = DragDropper()
     block.invoke(callback)
     ItemTouchHelper(callback).attachToRecyclerView(this)
 }
