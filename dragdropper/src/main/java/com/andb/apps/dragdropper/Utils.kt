@@ -19,3 +19,6 @@ fun dpToPx(dp: Int): Int {
     val scale = Resources.getSystem().displayMetrics.density
     return (dp * scale).toInt()
 }
+
+val Int.dp
+    get() = dpToPx(this)
