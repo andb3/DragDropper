@@ -3,7 +3,7 @@
 A Kotlin DSL for RecyclerView drag-and-drop actions.
 
 # Usage
-#### Example
+### Example
 ```kotlin
 recyclerView.dragDropWith {
     onDropped { oldPos, newPos ->
@@ -21,7 +21,7 @@ recyclerView.dragDropWith {
 }
 ```
 
-#### Notes
+### Notes
 - The library handles updating the adapter, but the underlying data does need to be updated at the end for the changes to stay in effect.
 - This is a pre-release, so the API is subject to change
 
